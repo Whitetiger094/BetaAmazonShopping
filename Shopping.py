@@ -6,3 +6,37 @@
 #   Trisha: Creating product list and pricing
 #   Sri: Writing and Reading files
 #   Shane: ???
+
+import tkinter as tk
+
+def CreO():
+    pass
+
+def CleO():
+    word1.set("Order Cleared")
+
+def ViewP():
+    pass
+
+def ViewPO():
+    pass
+
+win = tk.Tk()
+win.title("AMAZON SHOPPING BETA")
+
+word1 = tk.StringVar()
+word1.set("Click one of the buttons for your order")
+
+title = tk.Label(textvariable = word1)
+button1 = tk.Button(width = 20,text = "Create Order",command = CreO)
+button2 = tk.Button(width = 20,text = "Clear Order",command = CleO)
+button3 = tk.Button(width = 20,text = "View Products",command = ViewP)
+button4 = tk.Button(width = 20,text = "View Previous Orders",command = ViewPO)
+
+title.pack()
+button1.pack()
+button2.pack()
+button3.pack()
+button4.pack()
+
+win.mainloop()
